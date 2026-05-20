@@ -1,0 +1,10 @@
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="song-list">
+    <view class="song-item" wx:for="{{songs}}" wx:key="id">
+      <view class="song-info">
+        <text class="song-title">{{item.id}}、 {{item.title}}</text>
+      </view>
+    </view>
+    <view class="empty-tip" wx:if="{{songs.length === 0}}">暂无歌曲</view>
+  </view>
+</scroll-view>

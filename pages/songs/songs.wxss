@@ -1,0 +1,41 @@
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f7f7f7;
+}
+
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.song-list {
+  padding: 24rpx;
+}
+
+.song-item {
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 28rpx 32rpx;
+  margin-bottom: 20rpx;
+}
+
+.song-title {
+  display: block;
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 8rpx;
+}
+
+.song-artist {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.empty-tip {
+  text-align: center;
+  color: #999;
+  padding: 80rpx 0;
+  font-size: 28rpx;
+}
