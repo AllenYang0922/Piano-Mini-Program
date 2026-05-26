@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/songs/songs",
-    "pages/mine/mine",
+    "pages/history/history",
     "pages/logs/logs"
   ],
   "window": {
@@ -22,10 +22,10 @@
         "selectedIconPath": "images/tab-song-active.png"
       },
       {
-        "pagePath": "pages/mine/mine",
-        "text": "我的",
-        "iconPath": "images/tab-mine.png",
-        "selectedIconPath": "images/tab-mine-active.png"
+        "pagePath": "pages/history/history",
+        "text": "演奏历史",
+        "iconPath": "images/tab-history.png",
+        "selectedIconPath": "images/tab-history-active.png"
       }
     ]
   },

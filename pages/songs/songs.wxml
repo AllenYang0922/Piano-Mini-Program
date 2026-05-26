@@ -1,10 +1,25 @@
+<view class="songs-page">
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="song-list">
     <view class="song-item" wx:for="{{songs}}" wx:key="id">
       <view class="song-info">
         <text class="song-title">{{item.id}}、 {{item.title}}</text>
+        <view class="song-actions">
+          <text
+            wx:if="{{playingId !== item.id}}"
+            class="iconfont icon-bofang"
+            catchtap="onPlay"
+            data-id="{{item.id}}"
+          ></text>
+          <text
+            wx:if="{{playingId === item.id}}"
+            class="iconfont icon-tingzhi"
+            catchtap="onStop"
+            data-id="{{item.id}}"
+          ></text>
+        </view>
       </view>
     </view>
-    <view class="empty-tip" wx:if="{{songs.length === 0}}">暂无歌曲</view>
   </view>
 </scroll-view>
+</view>

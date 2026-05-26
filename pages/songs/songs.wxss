@@ -1,4 +1,4 @@
-page {
+.songs-page {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,16 +21,45 @@ page {
   margin-bottom: 20rpx;
 }
 
+.song-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .song-title {
-  display: block;
+  flex: 1;
+  min-width: 0;
   font-size: 32rpx;
   color: #333;
-  margin-bottom: 8rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-actions {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 24rpx;
+}
+
+.song-actions .iconfont {
+  font-size: 44rpx;
+  color: #333;
+  padding: 8rpx;
 }
 
 .song-artist {
   font-size: 26rpx;
   color: #999;
+}
+
+.loading-tip {
+  text-align: center;
+  color: #999;
+  padding: 40rpx 0;
+  font-size: 28rpx;
 }
 
 .empty-tip {
